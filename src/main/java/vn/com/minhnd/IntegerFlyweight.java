@@ -22,16 +22,20 @@ public class IntegerFlyweight {
 //		System.out.println(e.compareTo(f));
 //		System.out.println(f.toString());
 		
-		assertSame(c, d);
+		//assertSame(c, d);
 		
-		assertSame(e, f);
+		//assertSame(e, f);
 		Integer g = Integer.valueOf(1);
 		Integer h = Integer.valueOf(1);
 		Integer i = Integer.valueOf(1);
 		Integer j = Integer.valueOf(1);
-		assertNotSame(g, h);
+		//assertNotSame(g, h);
 		assertSame(h, i);
 		assertSame(i, j);
+		
+		Integer x = Integer.valueOf("300");
+		Integer y = Integer.valueOf("300");
+		assertSame(x, y);
 		/**
 		 * Returns an Integer instance representing the specified int value. If a new Integer instance is not required,
 		 * this method should generally be used in preference to the constructor Integer(int),
