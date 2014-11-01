@@ -1,4 +1,4 @@
-package vn.com.minhnd;
+package vn.com.minhnd.decorator;
 
 import org.junit.Test;
 
