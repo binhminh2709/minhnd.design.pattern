@@ -3,7 +3,6 @@ package vn.com.minhnd;
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertSame;
 
-import org.eclipse.jdt.internal.compiler.codegen.IntegerCache;
 import org.junit.Test;
 
 public class IntegerFlyweight {
