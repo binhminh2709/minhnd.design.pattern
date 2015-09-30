@@ -1,4 +1,4 @@
-package vn.com.minhnd;
+package pattern.common;
 
 import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertSame;
@@ -18,6 +18,7 @@ public class IntegerFlyweight {
 		
 		 Integer e = Integer.valueOf(472);
 		 Integer f = Integer.valueOf(472);
+
 //		System.out.println(e.compareTo(f));
 //		System.out.println(f.toString());
 		
@@ -35,6 +36,7 @@ public class IntegerFlyweight {
 		Integer x = Integer.valueOf("300");
 		Integer y = Integer.valueOf("300");
 		assertSame(x, y);
+
 		/**
 		 * Returns an Integer instance representing the specified int value. If a new Integer instance is not required,
 		 * this method should generally be used in preference to the constructor Integer(int),
