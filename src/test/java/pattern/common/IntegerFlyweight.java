@@ -51,6 +51,8 @@ public class IntegerFlyweight {
 		 * */
 		
 	}
+
+
 	
 	/**Tại sao lại không bằng nhỉ
 	 * If we look at the source for valueOf, we can get a hint: Source of java.lang.Integer lines 638-643:
@@ -73,3 +75,5 @@ public class IntegerFlyweight {
 	 * you'll end up getting the same object back every time (not just equivalent objects).
 	 * */
 }
+
+

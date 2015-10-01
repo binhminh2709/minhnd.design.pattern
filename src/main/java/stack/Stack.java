@@ -11,7 +11,8 @@ public class Stack {
      * Stack sử dụng LinkedList, do phải add or remove element, nên dùng LinkedList performe tốt hơn ArrayList
      * */
     private final LinkedList<Integer> stack;
-    
+
+
     public Stack() {
         stack = new LinkedList<>();
     }
