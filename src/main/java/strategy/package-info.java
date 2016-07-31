@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author BinhMinh
- *
- */
-package strategy;
