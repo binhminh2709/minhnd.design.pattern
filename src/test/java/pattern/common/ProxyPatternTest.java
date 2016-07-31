@@ -1,7 +1,7 @@
 package pattern.common;
 
-import proxy.CommandExecutor;
-import proxy.CommandExecutorProxy;
+import structural.proxy.CommandExecutor;
+import structural.proxy.CommandExecutorProxy;
 
 /**
  * Created by Administrator on 10/1/2015.

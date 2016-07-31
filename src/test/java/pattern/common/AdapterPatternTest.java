@@ -1,9 +1,9 @@
 package pattern.common;
 
-import adapter.SocketAdapter;
-import adapter.SocketClassAdapterImpl;
-import adapter.SocketObjectAdapterImpl;
-import adapter.Volt;
+import structural.adapter.SocketAdapter;
+import structural.adapter.SocketClassAdapterImpl;
+import structural.adapter.SocketObjectAdapterImpl;
+import structural.adapter.Volt;
 
 /**
  * Created by Administrator on 10/1/2015.
