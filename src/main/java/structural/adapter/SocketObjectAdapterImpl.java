@@ -1,4 +1,4 @@
-package adapter;
+package structural.adapter;
 
 /**
  * Created by Administrator on 10/1/2015.

@@ -1,4 +1,4 @@
-package strategy;
+package behavioural.strategy;
 
 public class Can_you_give_an_example_of_the_Strategy_Pattern {
 /**

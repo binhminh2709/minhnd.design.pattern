@@ -1,4 +1,4 @@
-package factory;
+package creational.factory;
 
 class BMW implements Car {
 	

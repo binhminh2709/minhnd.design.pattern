@@ -1,10 +1,10 @@
-package strategy;
+package behavioural.strategy;
 
 public class Client {
 
-    private final Logging logging;
-    
     private static final String MINH_ND = "nguyendinhminh";
+    
+    private final Logging logging;
     
     public Client(Logging logging) {
         this.logging = logging;

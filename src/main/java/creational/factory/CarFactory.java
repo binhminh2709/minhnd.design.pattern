@@ -1,4 +1,4 @@
-package factory;
+package creational.factory;
 
 import static org.junit.Assert.assertNull;
 

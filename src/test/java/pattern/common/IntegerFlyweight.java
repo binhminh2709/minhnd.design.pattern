@@ -1,6 +1,5 @@
 package pattern.common;
 
-import static org.junit.Assert.assertNotSame;
 import static org.junit.Assert.assertSame;
 
 import org.junit.Test;

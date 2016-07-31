@@ -1,8 +1,8 @@
 package pattern.common;
 
-import prototype.Employees;
-
 import java.util.List;
+
+import structural.prototype.Employees;
 
 /**
  * Created by Administrator on 10/1/2015.

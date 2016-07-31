@@ -1,14 +1,15 @@
-package strategy;
+package behavioural.strategy;
 
-import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.*;
+import org.junit.Test;
 
 public class ClientTest {
     

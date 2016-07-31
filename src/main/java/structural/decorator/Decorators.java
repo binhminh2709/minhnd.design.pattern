@@ -1,4 +1,4 @@
-package decorator;
+package structural.decorator;
 
 import org.junit.Test;
 

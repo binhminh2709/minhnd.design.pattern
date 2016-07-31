@@ -1,4 +1,4 @@
-package proxy;
+package structural.proxy;
 
 /**
  * Created by Administrator on 10/1/2015.
