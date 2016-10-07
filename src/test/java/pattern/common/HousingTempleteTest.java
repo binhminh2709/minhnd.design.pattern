@@ -1,9 +1,9 @@
 package pattern.common;
 
 
-import templateMethod.GlassHouse;
-import templateMethod.HouseTemplate;
-import templateMethod.WoodenHouse;
+import behavioural.template.method.GlassHouse;
+import behavioural.template.method.HouseTemplate;
+import behavioural.template.method.WoodenHouse;
 
 /**
  * Created by Administrator on 10/1/2015.
