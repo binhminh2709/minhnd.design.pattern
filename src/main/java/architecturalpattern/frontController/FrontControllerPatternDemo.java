@@ -1,4 +1,4 @@
-package architectureal.frontController;
+package architecturalpattern.frontController;
 
 /**
  * Created by nguyen on 10/18/2016.
