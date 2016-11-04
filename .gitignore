@@ -44,3 +44,10 @@ Temporary Items
 .apdisk
 .idea/
 minhnd.design.pattern.iml
+filename.ser
+target/generated-sources/
+target/generated-test-sources/
+/.settings/
+/target/
+/.classpath
+/.project
