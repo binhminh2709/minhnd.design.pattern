@@ -1,9 +1,9 @@
 package creational;
 
-import creational.factory.Car;
+import gangofFour.creational.factory.Car;
 import org.junit.Test;
 
-import static creational.factory.CarFactory.createCar;
+import static gangofFour.creational.factory.CarFactory.createCar;
 import static junit.framework.TestCase.assertNull;
 
 /**

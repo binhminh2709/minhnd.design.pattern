@@ -2,7 +2,7 @@ package pattern.common;
 
 import java.util.List;
 
-import creational.prototype.Employees;
+import gangofFour.creational.prototype.Employees;
 
 
 /**

@@ -1,9 +1,9 @@
 package creational;
 
-import creational.abstractfactory.Computer;
-import creational.abstractfactory.ComputerFactory;
-import creational.abstractfactory.PCFactory;
-import creational.abstractfactory.ServerFactory;
+import gangofFour.creational.abstractfactory.Computer;
+import gangofFour.creational.abstractfactory.ComputerFactory;
+import gangofFour.creational.abstractfactory.PCFactory;
+import gangofFour.creational.abstractfactory.ServerFactory;
 
 /**
  * Created by nguyen on 10/6/2016.

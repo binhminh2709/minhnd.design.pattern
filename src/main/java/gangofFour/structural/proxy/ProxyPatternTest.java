@@ -1,10 +1,7 @@
-package pattern.common;
-
-import gangofFour.structural.proxy.CommandExecutor;
-import gangofFour.structural.proxy.CommandExecutorProxy;
+package gangofFour.structural.proxy;
 
 /**
- * Created by Administrator on 10/1/2015.
+ * Created by nguyen on 10/16/2016.
  */
 public class ProxyPatternTest {
 
@@ -16,6 +13,5 @@ public class ProxyPatternTest {
         } catch (Exception e) {
             System.out.println("Exception Message::" + e.getMessage());
         }
-
     }
 }

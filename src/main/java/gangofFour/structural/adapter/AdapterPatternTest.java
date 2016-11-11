@@ -1,14 +1,10 @@
-package pattern.common;
-
-import gangofFour.structural.adapter.SocketAdapter;
-import gangofFour.structural.adapter.SocketClassAdapterImpl;
-import gangofFour.structural.adapter.SocketObjectAdapterImpl;
-import gangofFour.structural.adapter.Volt;
+package gangofFour.structural.adapter;
 
 /**
- * Created by Administrator on 10/1/2015.
+ * Created by nguyen on 10/18/2016.
  */
 public class AdapterPatternTest {
+
     public static void main(String[] args) {
 
         testClassAdapter();
@@ -47,4 +43,5 @@ public class AdapterPatternTest {
                 return sockAdapter.get120Volt();
         }
     }
+
 }
