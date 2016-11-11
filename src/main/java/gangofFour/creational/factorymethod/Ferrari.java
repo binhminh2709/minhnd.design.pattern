@@ -1,4 +1,4 @@
-package gangofFour.creational.factory;
+package gangofFour.creational.factorymethod;
 
 class Ferrari implements Car {
 	
