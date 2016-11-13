@@ -3,11 +3,11 @@ package gangofFour.behavioural.observer;
 /**
  * Created by nguyen on 10/15/2016.
  */
-public interface Observer {
+public interface IObserver {
 
     //method to update the observer, used by subject
     public void update();
 
     //attach with subject to observe
-    public void setSubject(Subject sub);
+    public void setSubject(ISubject sub);
 }
