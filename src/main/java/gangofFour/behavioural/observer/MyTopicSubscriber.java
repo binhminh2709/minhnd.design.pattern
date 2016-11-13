@@ -3,9 +3,9 @@ package gangofFour.behavioural.observer;
 /**
  * Created by nguyen on 10/15/2016.
  */
-public class MyTopicSubscriber implements Observer {
+public class MyTopicSubscriber implements IObserver {
     private String name;
-    private Subject topic;
+    private ISubject topic;
 
     public MyTopicSubscriber(String nm) {
         this.name = nm;
@@ -21,7 +21,7 @@ public class MyTopicSubscriber implements Observer {
     }
 
     @Override
-    public void setSubject(Subject sub) {
+    public void setSubject(ISubject sub) {
         this.topic = sub;
     }
 }

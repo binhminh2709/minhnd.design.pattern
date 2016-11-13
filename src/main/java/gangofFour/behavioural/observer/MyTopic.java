@@ -6,50 +6,50 @@ import java.util.List;
 /**
  * Created by nguyen on 10/15/2016.
  */
-public class MyTopic implements Subject {
+public class MyTopic implements ISubject {
 
-    private List<Observer> observers;
+    private List<IObserver> IObservers;
     private String message;
     private boolean changed;
     private final Object MUTEX = new Object();
 
     public MyTopic() {
-        this.observers = new ArrayList<>();
+        this.IObservers = new ArrayList<>();
     }
 
     @Override
-    public void register(Observer obj) {
+    public void register(IObserver obj) {
         if (obj == null) throw new NullPointerException("Null Observer");
         synchronized (MUTEX) {
-            if (!observers.contains(obj)) observers.add(obj);
+            if (!IObservers.contains(obj)) IObservers.add(obj);
         }
     }
 
     @Override
-    public void unregister(Observer obj) {
+    public void unregister(IObserver obj) {
         synchronized (MUTEX) {
-            observers.remove(obj);
+            IObservers.remove(obj);
         }
     }
 
     @Override
     public void notifyObservers() {
-        List<Observer> observersLocal = null;
+        List<IObserver> observersLocal = null;
         //synchronization is used to make sure any observer registered after message is received is not notified
         synchronized (MUTEX) {
             if (!changed)
                 return;
-            observersLocal = new ArrayList<>(this.observers);
+            observersLocal = new ArrayList<>(this.IObservers);
             this.changed = false;
         }
-        for (Observer obj : observersLocal) {
+        for (IObserver obj : observersLocal) {
             obj.update();
         }
 
     }
 
     @Override
-    public Object getUpdate(Observer obj) {
+    public Object getUpdate(IObserver obj) {
         return this.message;
     }
 
