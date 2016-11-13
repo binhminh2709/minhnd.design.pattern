@@ -2,8 +2,8 @@ package gangofFour.creational.factorymethod;
 
 public class PreFactoryPatternDemo {
     
-    Car createCar(String carType) {
-        Car c = null;
+    ICar createCar(String carType) {
+        ICar c = null;
         if (carType.equals("Audi")) {
             c = new Audi();
         } else if (carType.equals("BMW")) {

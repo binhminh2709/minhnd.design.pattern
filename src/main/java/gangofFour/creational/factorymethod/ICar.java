@@ -1,6 +1,6 @@
 package gangofFour.creational.factorymethod;
 
-public interface Car {
+public interface ICar {
     void paintColor(String color);
     
     void setEngine(String engine);

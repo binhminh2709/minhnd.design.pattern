@@ -1,6 +1,6 @@
 package creational;
 
-import gangofFour.creational.factorymethod.Car;
+import gangofFour.creational.factorymethod.ICar;
 import org.junit.Test;
 
 import static gangofFour.creational.factorymethod.CarFactory.createCar;
@@ -13,7 +13,7 @@ public class FactoryPatternUnitTest {
 
     @Test
     public void testCreateCar() {
-        Car c = createCar("minhnd");
+        ICar c = createCar("minhnd");
         assertNull(c);
     }
 }

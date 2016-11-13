@@ -23,8 +23,8 @@ public class CarFactory {
      * but let the classes that implement the interface decide which class to instantiate.
      */
 
-    public static Car createCar(String carType) {
-        Car c = null;
+    public static ICar createCar(String carType) {
+        ICar c = null;
         if (carType.equals("Audi")) {
             c = new Audi();
         } else if (carType.equals("BMW")) {

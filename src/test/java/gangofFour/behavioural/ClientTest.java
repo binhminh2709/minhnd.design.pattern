@@ -9,25 +9,21 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-import gangofFour.behavioural.strategy.Client;
-import gangofFour.behavioural.strategy.ConsoleLogging;
-import gangofFour.behavioural.strategy.FileLogging;
-import gangofFour.behavioural.strategy.Logging;
 import org.junit.Test;
 
 public class ClientTest {
     
     @Test
     public void useConsoleLogging() {
-        //error: Client.MINH_ND;
-        final Client c = new Client(new ConsoleLogging());
+//        error: Client.MINH_ND;
+        final Client c = new Client(new ConsoleILogging());
         c.doWork(32);
     }
     
     @Test
     public void useFileLogging() throws IOException {
         final File tempFile = File.createTempFile("test", "log");
-        final Client c = new Client(new FileLogging(tempFile));
+        final Client c = new Client(new FileILogging(tempFile));
         c.doWork(41);
         c.doWork(42);
         c.doWork(43);
@@ -39,11 +35,11 @@ public class ClientTest {
     
     @Test
     public void useMockLogging() {
-        final Logging mockLogging = mock(Logging.class);
-        final Client c = new Client(mockLogging);
+        final ILogging mockILogging = mock(ILogging.class);
+        final Client c = new Client(mockILogging);
         c.doWork(1);
         c.doWork(2);
-        verify(mockLogging).write("Even number: 2");
+        verify(mockILogging).write("Even number: 2");
     }
     
 /**

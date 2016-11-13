@@ -1,18 +1,18 @@
-package gangofFour.behavioural.strategy;
+package gangofFour.behavioural;
 
 public class Client {
 
     private static final String MINH_ND = "nguyendinhminh";
     
-    private final Logging logging;
+    private final ILogging ILogging;
     
-    public Client(Logging logging) {
-        this.logging = logging;
+    public Client(ILogging ILogging) {
+        this.ILogging = ILogging;
     }
     
     public void doWork(final int count) {
         if (count % 2 == 0) {
-            logging.write("Even number: " + count);
+            ILogging.write("Even number: " + count);
         }
     }
     

@@ -1,6 +1,6 @@
 package gangofFour.creational.factorymethod;
 
-class Ferrari implements Car {
+class Ferrari implements ICar {
 	
     public void paintColor(String color) {
         System.out.println("Green");
