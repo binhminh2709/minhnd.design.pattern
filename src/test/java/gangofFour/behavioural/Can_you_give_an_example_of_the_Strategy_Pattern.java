@@ -1,4 +1,4 @@
-package gangofFour.behavioural.strategy;
+package gangofFour.behavioural;
 
 public class Can_you_give_an_example_of_the_Strategy_Pattern {
 /**

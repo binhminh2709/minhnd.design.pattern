@@ -1,6 +1,6 @@
-package gangofFour.behavioural.strategy;
+package gangofFour.behavioural;
 
-public class ConsoleLogging implements Logging {
+public class ConsoleILogging implements ILogging {
     
     @Override
     public void write(final String message) {
