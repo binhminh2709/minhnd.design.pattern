@@ -1,9 +1,16 @@
 package gangofFour.behavioural.interpreter;
 
 /**
- * Created by nguyen on 10/7/2016.
+ * Created by binhminh on 11/12/2016.
  */
-public enum  InterpreterContext {
+public class InterpreterContext {
 
-    ENGLISH, HINDI, FRENCH, ALL;
+    public String getBinaryFormat(int i){
+        return Integer.toBinaryString(i);
+    }
+
+    public String getHexadecimalFormat(int i){
+        return Integer.toHexString(i);
+    }
+
 }

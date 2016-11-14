@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Created by nguyen on 10/12/2016.
  */
-public class ChannelCollectionImpl implements ChannelCollection {
+public class ChannelCollectionImpl implements IChannelCollection {
 
     private List<Channel> channelsList;
 
@@ -25,11 +25,11 @@ public class ChannelCollectionImpl implements ChannelCollection {
     }
 
     @Override
-    public ChannelIterator iterator(ChannelTypeEnum type) {
+    public IChannelIterator iterator(ChannelTypeEnum type) {
         return new ChannelIteratorImpl(type, this.channelsList);
     }
 
-    private class ChannelIteratorImpl implements ChannelIterator {
+    private class ChannelIteratorImpl implements IChannelIterator {
 
         private ChannelTypeEnum type;
         private List<Channel> channels;
