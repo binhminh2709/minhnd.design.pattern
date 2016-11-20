@@ -21,6 +21,6 @@ public class Line implements Shape {
 
     @Override
     public void draw(Graphics g, int x, int y, int width, int height, Color color) {
-        line.setColor(color); line.drawLine(x1, y1, x2, y2);
+//        line.setColor(color); line.drawLine(x1, y1, x2, y2);
     }
 }
