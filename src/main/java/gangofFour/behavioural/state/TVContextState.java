@@ -3,15 +3,15 @@ package gangofFour.behavioural.state;
 /**
  * Created by nguye on 11/13/16.
  */
-public class TVContextImpl implements IState {
+public class TVContextState implements State {
 
-    private IState tvState;
+    private State tvState;
 
-    public void setState(IState state) {
+    public void setState(State state) {
         this.tvState = state;
     }
 
-    public IState getState() {
+    public State getState() {
         return this.tvState;
     }
 

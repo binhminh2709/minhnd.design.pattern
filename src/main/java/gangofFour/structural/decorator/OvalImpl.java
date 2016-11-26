@@ -1,8 +1,8 @@
 package gangofFour.structural.decorator;
 
-public class Oval implements IShape {
+public class OvalImpl implements IShape {
 	
-	public Oval() {
+	public OvalImpl() {
 	}
 
 	@Override
