@@ -5,12 +5,12 @@ import java.awt.*;
 /**
  * Created by nguye on 11/14/16.
  */
-public class Oval implements Shape {
+public class OvalShape implements Shape {
 
     //intrinsic property
     private boolean fill;
 
-    public Oval(boolean f) {
+    public OvalShape(boolean f) {
         this.fill = f;
         System.out.println("Creating Oval object with fill=" + f);
         //adding time delay

@@ -13,11 +13,11 @@ public class ShapeFactory {
         Shape shapeImpl = shapes.get(type);
         if (shapeImpl == null) {
             if (type.equals(ShapeType.OVAL_FILL)) {
-                shapeImpl = new Oval(true);
+                shapeImpl = new OvalShape(true);
             } else if (type.equals(ShapeType.OVAL_NOFILL)) {
-                shapeImpl = new Oval(false);
+                shapeImpl = new OvalShape(false);
             } else if (type.equals(ShapeType.LINE)) {
-                shapeImpl = new Line();
+                shapeImpl = new LineShape();
             }
             shapes.put(type, shapeImpl);
         }
