@@ -23,10 +23,10 @@ public class Oval implements Shape {
 
     @Override
     public void draw(Graphics g, int x, int y, int width, int height, Color color) {
-        circle.setColor(color);
-        circle.drawOval(x, y, width, height);
-        if (fill) {
-            circle.fillOval(x, y, width, height);
-        }
+//        circle.setColor(color);
+//        circle.drawOval(x, y, width, height);
+//        if (fill) {
+//            circle.fillOval(x, y, width, height);
+//        }
     }
 }

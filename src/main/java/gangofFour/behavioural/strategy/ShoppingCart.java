@@ -30,7 +30,7 @@ public class ShoppingCart {
         return sum;
     }
 
-    public void pay(IPaymentStrategy paymentMethod) {
+    public void pay(PaymentStrategy paymentMethod) {
         int amount = calculateTotal();
         paymentMethod.pay(amount);
     }

@@ -1,11 +1,11 @@
 package gangofFour.structural.decorator;
 
-public class Rectangle implements IShape {
+public class RectangleImpl implements IShape {
 	
 	/**
 	 * Step 2 Create concrete classes implementing the same interface
 	 * */
-	public Rectangle() {
+	public RectangleImpl() {
 	}
 
 	@Override

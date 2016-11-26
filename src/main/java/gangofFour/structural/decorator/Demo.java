@@ -8,11 +8,11 @@ public class Demo {
 	 * */
 	public static void main(String[] args) {
 		
-		IShape circle = new Circle();
-		IShape redCircle = new ShapeDecoratorEx(new Circle());
+		IShape circle = new CircleImpl();
+		IShape redCircle = new ShapeDecoratorEx(new CircleImpl());
 		
-		IShape rectangle = new Rectangle();
-		IShape redRectangle = new ShapeDecoratorEx(new Rectangle());
+		IShape rectangle = new RectangleImpl();
+		IShape redRectangle = new ShapeDecoratorEx(new RectangleImpl());
 		
 		System.out.println("Circle with normal border");
 		circle.draw();
