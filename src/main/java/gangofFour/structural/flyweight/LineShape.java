@@ -5,13 +5,13 @@ import java.awt.*;
 /**
  * Created by nguye on 11/14/16.
  */
-public class Line implements Shape {
+public class LineShape implements Shape {
 
-    protected Line line;
+    protected LineShape line;
 
-    public Line() {
+    public LineShape() {
         System.out.println("Creating Line object"); //adding time delay
-        line = new Line();
+        line = new LineShape();
         try {
             Thread.sleep(2000);
         } catch (InterruptedException e) {
