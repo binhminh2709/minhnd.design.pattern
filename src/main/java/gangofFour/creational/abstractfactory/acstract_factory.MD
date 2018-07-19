@@ -9,3 +9,7 @@ Abstract Factory pattern is robust and avoid conditional logic of Factory patter
 javax.xml.parsers.DocumentBuilderFactory#newInstance()
 javax.xml.transform.TransformerFactory#newInstance()
 javax.xml.xpath.XPathFactory#newInstance()
+
+**Design Patterns in the 21st Century: The Abstract Factory Pattern**
+
+https://www.javacodegeeks.com/2015/04/design-patterns-in-the-21st-century-the-abstract-factory-pattern.html
