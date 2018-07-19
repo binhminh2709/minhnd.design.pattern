@@ -1,36 +1,34 @@
 package gangofFour.behavioural.visitor;
 
-import gangofFour.behavioural.strategy.Item;
-
 /**
  * Created by nguye on 11/13/16.
  */
 public class Fruit implements ItemElement {
 
-    private int pricePerKg;
-    private int weight;
-    private String name;
+  private int pricePerKg;
+  private int weight;
+  private String name;
 
-    public Fruit(int priceKg, int wt, String nm) {
-        this.pricePerKg = priceKg;
-        this.weight = wt;
-        this.name = nm;
-    }
+  public Fruit(int priceKg, int wt, String nm) {
+    this.pricePerKg = priceKg;
+    this.weight = wt;
+    this.name = nm;
+  }
 
-    public int getPricePerKg() {
-        return pricePerKg;
-    }
+  public int getPricePerKg() {
+    return pricePerKg;
+  }
 
-    public int getWeight() {
-        return weight;
-    }
+  public int getWeight() {
+    return weight;
+  }
 
-    public String getName() {
-        return this.name;
-    }
+  public String getName() {
+    return this.name;
+  }
 
-    @Override
-    public int accept(ShoppingCartVisitor visitor) {
-        return visitor.visit(this);
-    }
+  @Override
+  public int accept(ShoppingCartVisitor visitor) {
+    return visitor.visit(this);
+  }
 }

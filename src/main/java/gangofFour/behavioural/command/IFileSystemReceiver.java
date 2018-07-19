@@ -5,9 +5,9 @@ package gangofFour.behavioural.command;
  */
 public interface IFileSystemReceiver {
 
-    void openFile();
+  void openFile();
 
-    void writeFile();
+  void writeFile();
 
-    void closeFile();
+  void closeFile();
 }

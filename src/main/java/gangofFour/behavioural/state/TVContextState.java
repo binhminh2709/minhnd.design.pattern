@@ -5,18 +5,18 @@ package gangofFour.behavioural.state;
  */
 public class TVContextState implements State {
 
-    private State tvState;
+  private State tvState;
 
-    public void setState(State state) {
-        this.tvState = state;
-    }
+  public State getState() {
+    return this.tvState;
+  }
 
-    public State getState() {
-        return this.tvState;
-    }
+  public void setState(State state) {
+    this.tvState = state;
+  }
 
-    @Override
-    public void doAction() {
-        this.tvState.doAction();
-    }
+  @Override
+  public void doAction() {
+    this.tvState.doAction();
+  }
 }

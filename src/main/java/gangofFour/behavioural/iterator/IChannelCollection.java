@@ -5,9 +5,9 @@ package gangofFour.behavioural.iterator;
  */
 public interface IChannelCollection {
 
-    public void addChannel(Channel c);
+  public void addChannel(Channel c);
 
-    public void removeChannel(Channel c);
+  public void removeChannel(Channel c);
 
-    public IChannelIterator iterator(ChannelTypeEnum type);
+  public IChannelIterator iterator(ChannelTypeEnum type);
 }

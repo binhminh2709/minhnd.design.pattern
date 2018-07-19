@@ -5,5 +5,5 @@ package gangofFour.structural.composite;
  */
 public interface Shape {
 
-    public void draw(String fillColor);
+  public void draw(String fillColor);
 }

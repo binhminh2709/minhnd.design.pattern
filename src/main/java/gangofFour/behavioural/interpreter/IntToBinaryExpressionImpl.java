@@ -5,15 +5,15 @@ package gangofFour.behavioural.interpreter;
  */
 public class IntToBinaryExpressionImpl implements IExpression {
 
-    private int i;
+  private int i;
 
-    public IntToBinaryExpressionImpl(int c) {
-        this.i = c;
-    }
+  public IntToBinaryExpressionImpl(int c) {
+    this.i = c;
+  }
 
 
-    @Override
-    public String interpret(InterpreterContext ic) {
-        return ic.getBinaryFormat(this.i);
-    }
+  @Override
+  public String interpret(InterpreterContext ic) {
+    return ic.getBinaryFormat(this.i);
+  }
 }

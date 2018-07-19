@@ -5,16 +5,16 @@ package gangofFour.behavioural.strategy;
  */
 public class PaypalPaymentStrategy implements PaymentStrategy {
 
-    private String emailId;
-    private String password;
+  private String emailId;
+  private String password;
 
-    public PaypalPaymentStrategy(String email, String pwd) {
-        this.emailId = email;
-        this.password = pwd;
-    }
+  public PaypalPaymentStrategy(String email, String pwd) {
+    this.emailId = email;
+    this.password = pwd;
+  }
 
-    @Override
-    public void pay(int amount) {
-        System.out.println(amount + " paid using Paypal.");
-    }
+  @Override
+  public void pay(int amount) {
+    System.out.println(amount + " paid using Paypal.");
+  }
 }

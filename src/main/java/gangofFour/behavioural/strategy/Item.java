@@ -4,19 +4,20 @@ package gangofFour.behavioural.strategy;
  * Created by nguye on 11/13/16.
  */
 public class Item {
-    private String upcCode;
-    private int price;
 
-    public Item(String upc, int cost) {
-        this.upcCode = upc;
-        this.price = cost;
-    }
+  private String upcCode;
+  private int price;
 
-    public String getUpcCode() {
-        return upcCode;
-    }
+  public Item(String upc, int cost) {
+    this.upcCode = upc;
+    this.price = cost;
+  }
 
-    public int getPrice() {
-        return price;
-    }
+  public String getUpcCode() {
+    return upcCode;
+  }
+
+  public int getPrice() {
+    return price;
+  }
 }

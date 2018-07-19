@@ -5,7 +5,7 @@ package gangofFour.behavioural.iterator;
  */
 public interface IChannelIterator {
 
-    public boolean hasNext();
+  public boolean hasNext();
 
-    public Channel next();
+  public Channel next();
 }

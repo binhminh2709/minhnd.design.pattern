@@ -5,14 +5,14 @@ package gangofFour.behavioural.command;
  */
 public class CloseFileCommandImpl implements ICommand {
 
-    private IFileSystemReceiver fileSystem;
+  private IFileSystemReceiver fileSystem;
 
-    public CloseFileCommandImpl(IFileSystemReceiver fs) {
-        this.fileSystem = fs;
-    }
+  public CloseFileCommandImpl(IFileSystemReceiver fs) {
+    this.fileSystem = fs;
+  }
 
-    @Override
-    public void execute() {
-        this.fileSystem.closeFile();
-    }
+  @Override
+  public void execute() {
+    this.fileSystem.closeFile();
+  }
 }

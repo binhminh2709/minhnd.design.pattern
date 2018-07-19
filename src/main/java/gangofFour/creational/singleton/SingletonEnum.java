@@ -2,9 +2,9 @@ package gangofFour.creational.singleton;
 
 public enum SingletonEnum {
 
-    INSTANCE;
+  INSTANCE;
 
-    public void singletonMethod() {
-        // operations here
-    }
+  public void singletonMethod() {
+    // operations here
+  }
 }

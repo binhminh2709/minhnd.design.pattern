@@ -5,15 +5,15 @@ package gangofFour.behavioural.command;
  */
 public class OpenFileCommand implements ICommand {
 
-    private IFileSystemReceiver fileSystem;
+  private IFileSystemReceiver fileSystem;
 
-    public OpenFileCommand(IFileSystemReceiver fs) {
-        this.fileSystem = fs;
-    }
+  public OpenFileCommand(IFileSystemReceiver fs) {
+    this.fileSystem = fs;
+  }
 
-    @Override
-    public void execute() {
-        //open command is forwarding request to openFile method
-        this.fileSystem.openFile();
-    }
+  @Override
+  public void execute() {
+    //open command is forwarding request to openFile method
+    this.fileSystem.openFile();
+  }
 }

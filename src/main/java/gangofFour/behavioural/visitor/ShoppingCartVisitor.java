@@ -5,7 +5,7 @@ package gangofFour.behavioural.visitor;
  */
 public interface ShoppingCartVisitor {
 
-    int visit(Book book);
+  int visit(Book book);
 
-    int visit(Fruit fruit);
+  int visit(Fruit fruit);
 }

@@ -1,27 +1,27 @@
 package gangofFour.creational.factorymethod;
 
 public class PreFactoryPatternDemo {
-    
-    ICar createCar(String carType) {
-        ICar c = null;
-        if (carType.equals("Audi")) {
-            c = new Audi();
-        } else if (carType.equals("BMW")) {
-            c = new BMW();
-        } else if (carType.equals("Ferrari")) {
-            c = new Ferrari();
-        } else if (carType.equals("volkswagen")) {
-            c = new Ferrari();
-        } else if (carType.equals("chevrolet")) {
-            c = new Ferrari();
-        } else if (carType.equals("hyundai")) {
-            c = new Ferrari();
-        } else if (carType.equals("Maruti")) {
-            c = new Ferrari();
-        }
-        return c;
+
+  ICar createCar(String carType) {
+    ICar c = null;
+    if (carType.equals("Audi")) {
+      c = new Audi();
+    } else if (carType.equals("BMW")) {
+      c = new BMW();
+    } else if (carType.equals("Ferrari")) {
+      c = new Ferrari();
+    } else if (carType.equals("volkswagen")) {
+      c = new Ferrari();
+    } else if (carType.equals("chevrolet")) {
+      c = new Ferrari();
+    } else if (carType.equals("hyundai")) {
+      c = new Ferrari();
+    } else if (carType.equals("Maruti")) {
+      c = new Ferrari();
     }
-    
+    return c;
+  }
+
 /**
  * Here we have got several class being instantiated
  * and the decision of which to instantiate is made at run time depending on condition.

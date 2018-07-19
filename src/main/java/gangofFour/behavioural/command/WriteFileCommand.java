@@ -5,14 +5,14 @@ package gangofFour.behavioural.command;
  */
 public class WriteFileCommand implements ICommand {
 
-    private IFileSystemReceiver fileSystem;
+  private IFileSystemReceiver fileSystem;
 
-    public WriteFileCommand(IFileSystemReceiver fs) {
-        this.fileSystem = fs;
-    }
+  public WriteFileCommand(IFileSystemReceiver fs) {
+    this.fileSystem = fs;
+  }
 
-    @Override
-    public void execute() {
-        this.fileSystem.writeFile();
-    }
+  @Override
+  public void execute() {
+    this.fileSystem.writeFile();
+  }
 }

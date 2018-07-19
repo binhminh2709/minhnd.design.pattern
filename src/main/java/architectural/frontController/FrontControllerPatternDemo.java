@@ -5,10 +5,10 @@ package architectural.frontController;
  */
 public class FrontControllerPatternDemo {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        FrontController frontController = new FrontController();
-        frontController.dispatchRequest("HOME");
-        frontController.dispatchRequest("STUDENT");
-    }
+    FrontController frontController = new FrontController();
+    frontController.dispatchRequest("HOME");
+    frontController.dispatchRequest("STUDENT");
+  }
 }

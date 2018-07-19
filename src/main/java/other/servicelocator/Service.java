@@ -5,8 +5,8 @@ package other.servicelocator;
  */
 public interface Service {
 
-    public String getName();
+  public String getName();
 
-    public void execute();
+  public void execute();
 
 }

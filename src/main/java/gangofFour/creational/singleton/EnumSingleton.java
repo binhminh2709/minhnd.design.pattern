@@ -4,9 +4,9 @@ package gangofFour.creational.singleton;
  * Created by nguyen on 10/7/2016.
  */
 public enum EnumSingleton {
-    INSTANCE;
+  INSTANCE;
 
-    public static void doSomething(){
-        //do something
-    }
+  public static void doSomething() {
+    //do something
+  }
 }

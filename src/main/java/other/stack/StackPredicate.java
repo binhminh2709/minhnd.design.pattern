@@ -1,5 +1,6 @@
 package other.stack;
 
 public interface StackPredicate {
-    boolean isValid(int i);
+
+  boolean isValid(int i);
 }

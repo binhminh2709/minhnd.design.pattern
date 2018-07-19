@@ -5,5 +5,5 @@ package gangofFour.behavioural.state;
  */
 public interface State {
 
-    public void doAction();
+  public void doAction();
 }

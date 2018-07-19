@@ -4,24 +4,26 @@ package gangofFour.behavioural.observer;
  * Created by nguyen on 10/15/2016.
  */
 public class MyTopicSubscriber implements IObserver {
-    private String name;
-    private ISubject topic;
 
-    public MyTopicSubscriber(String nm) {
-        this.name = nm;
-    }
+  private String name;
+  private ISubject topic;
 
-    @Override
-    public void update() {
-        String msg = (String) topic.getUpdate(this);
-        if (msg == null) {
-            System.out.println(name + ":: No new message");
-        } else
-            System.out.println(name + ":: Consuming message::" + msg);
-    }
+  public MyTopicSubscriber(String nm) {
+    this.name = nm;
+  }
 
-    @Override
-    public void setSubject(ISubject sub) {
-        this.topic = sub;
+  @Override
+  public void update() {
+    String msg = (String) topic.getUpdate(this);
+    if (msg == null) {
+      System.out.println(name + ":: No new message");
+    } else {
+      System.out.println(name + ":: Consuming message::" + msg);
     }
+  }
+
+  @Override
+  public void setSubject(ISubject sub) {
+    this.topic = sub;
+  }
 }

@@ -5,16 +5,16 @@ package gangofFour.behavioural.state;
  */
 public class TVRemoteTest {
 
-    public static void main(String[] args) {
+  public static void main(String[] args) {
 
-        TVContextState context = new TVContextState();
-        State tvStartState = new TVStartState();
-        State tvStopState = new TVStopState();
+    TVContextState context = new TVContextState();
+    State tvStartState = new TVStartState();
+    State tvStopState = new TVStopState();
 
-        context.setState(tvStartState);
-        context.doAction();
+    context.setState(tvStartState);
+    context.doAction();
 
-        context.setState(tvStopState);
-        context.doAction();
-    }
+    context.setState(tvStopState);
+    context.doAction();
+  }
 }
